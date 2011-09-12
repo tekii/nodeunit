@@ -102,7 +102,7 @@ if (files.length === 0) {
 if (config_file) {
     content = fs.readFileSync(config_file, 'utf8');
     var custom_options = JSON.parse(content);
-    
+
     for (var option in custom_options) {
         if (typeof option === 'string') {
             options[option] = custom_options[option];
